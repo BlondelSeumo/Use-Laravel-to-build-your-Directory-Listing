@@ -1,0 +1,68 @@
+/*== File Upload and delete Style1 Add Listing Page ==*/
+.upload_file_input_add_remove {
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  width: 170px;
+}
+.btn_upload {
+  background-color: #fafafa;
+  border: 1px dashed #717171;
+  border-radius: 8px;
+  color: #717171;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 30px;
+  height: 150px;
+  line-height: 150px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 170px;
+}
+.btn_upload input {
+  cursor: pointer;
+  height: 100%;
+  position: absolute;
+  filter: alpha(opacity=1);
+  -moz-opacity: 0;
+  opacity: 0;
+}
+.it {
+  border-radius: 8px;
+  height: 100%;
+  left: 0;
+  max-height: 150px;
+  max-width: 170px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.btn-rmv1,
+.btn-rmv2 {
+  display: none;
+}
+.btn-rmv1:hover,
+.btn-rmv1:active,
+.btn-rmv1:focus,
+.btn-rmv2:hover,
+.btn-rmv2:active,
+.btn-rmv2:focus{
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+.remove_add_file {
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  color: #717171;
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+}
+/*== File Upload and delete End Add Listing Page ==*/

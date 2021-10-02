@@ -1,0 +1,337 @@
+.listing_single_row{
+    position: relative;
+    z-index: 1;
+}
+.single_property_social_share{
+    .service-wishlist{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .social-share{
+        position: relative;
+        .share-wrapper{
+            visibility: hidden;
+            opacity: 0;
+            padding-left: 0;
+            position: absolute;
+            bottom: 100%;
+            left: 2px;
+            z-index: 1;
+            padding-top: 5px;
+            transition: all .3s;
+            li{
+                width: 40px;
+                height: 40px;
+                background: #fff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 5px;
+                a{
+                    color: #555 !important;
+                }
+            }
+        }
+        &:hover{
+            .share-wrapper{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}
+.service-wishlist.active{
+    > .fa:before{
+        content: "\f004";
+        color: red;
+    }
+}
+.listing_single_description{
+    .gallery_item img{
+        max-height: 170px;
+        object-fit: cover;
+        min-height: 170px;
+    }
+}
+.sidebar_author_widget{
+    .avatar{
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+.mbp_pagination_comments .mbp_first .media-body .sspd_postdate .sspd_review ul li i, .sspd_review ul li i{
+    font-size: 10px;
+    color: #FFF;
+    line-height: 11px;
+}
+.sidebar_social_icon{
+    a{
+        color: #555555;
+    }
+}
+
+.custom_reivews{
+    .rates i{
+        font-size: 10px;
+        color: #717171;
+        margin-right: 3px;
+        &.hovered, &.selected{
+            color: #F8B704;
+        }
+    }
+}
+.product_single_content {
+    .sspd_review ul li i {
+        color: #777777;
+    }
+}
+.listing_single_reviews{
+    .media{
+        .avatar{
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .list-inline-item{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.single_listing_faq .faq_according .accordion .card .card-header .btn-link {
+    display: block;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+.faq_according .accordion .card .card-header::before{
+    position: absolute;
+    right: 10px;
+}
+.custom_reivews .review_content{
+    .review_line{
+        position: relative;
+        &:before{
+            display: none;
+        }
+        .line-active{
+            background-color: #234DD4;
+            border-radius: 30px;
+            content: "";
+            height: 5px;
+            left: 0;
+            position: absolute;
+            display: block;
+        }
+    }
+}
+.agent_contact_form {
+    .form-mess {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 14px;
+        .text-success{
+            display: block;
+        }
+    }
+    button{
+        .fa-spin{
+            display: none;
+        }
+    }
+    &.loading{
+        button{
+            .fa-spin{
+                display: inline-block;
+            }
+            .text{
+                display: none;
+            }
+        }
+    }
+}
+.form-mess{
+    .text-danger, .text-success {
+        display: block;
+        margin-top: 15px;
+    }
+}
+.bc-contact-block-form{
+    .submit{
+        .fa{
+            display: none;
+        }
+    }
+    &.loading{
+        .submit .fa{
+            display: inline-block;
+        }
+    }
+}
+.home_iconbox_container{
+    z-index: 1;
+}
+
+div {
+    .feat_property {
+        .badge_icon {
+            max-width: 52px;
+            max-height: 52px;
+        }
+
+        .thumb {
+            .avatar-text-large {
+                height: 212px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #FFF;
+                font-size: 50px;
+                width: 100%;
+                font-weight: bold;
+            }
+
+            .thumb-image {
+                background: transparent;
+                padding-bottom: 63%;
+
+                img {
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .thmb_cntnt {
+                position: initial;
+                bottom: auto;
+
+                ul.tag {
+                    left: 20px;
+                    top: 20px;
+
+                    .list-inline-item {
+                        font-size: 14px;
+                        font-family: 'Jost', sans-serif;
+                        color: #fefefe;
+                    }
+                }
+
+                ul.tag2 {
+                    top: 20px;
+                    right: 20px;
+                }
+
+                .listing_reviews {
+                    left: 20px;
+
+                    .list-inline-item {
+                        font-size: 14px;
+
+                        i {
+                            color: #FFF;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+a.reset-filter{
+    color: #555555;
+}
+.home-listing-slider{
+    min-height: 600px;
+    background: #777;
+    @media(max-width: 767px){
+        .home-listing-slider{
+            min-height: 500px;
+        }
+    }
+}
+header.header-nav.menu_style_home_one .ace-responsive-menu li.user_setting a{
+    font-size: 15px;
+}
+@media(min-width: 1200px) and (max-width: 1440px){
+    header.header-nav .header_search_widget.home1 .mailchimp_form .form-control,
+    header.header-nav .header_search_widget.inner_page .mailchimp_form .form-control{
+        padding-left: 0;
+        width: 230px;
+    }
+    header .ht_left_widget ul li.list-inline-item:first-child{
+        margin-right: 0;
+    }
+    .header_search_widget.home1 .mailchimp_form .form-control::placeholder{
+        font-size: 14px;
+    }
+    header.header-nav.menu_style_home_one nav ul.ace-responsive-menu li.add_listing{
+        width: 130px;
+    }
+    header.header-nav.menu_style_home_one nav ul.ace-responsive-menu li.add_listing a{
+        font-size: 14px;
+    }
+    header.header-nav.menu_style_home_one .ace-responsive-menu li.user_setting a,
+    header.header-nav.menu_style_home_one.style2 .ace-responsive-menu li.user_setting a{
+        font-size: 14px;
+    }
+    header.header-nav .ace-responsive-menu > li > a,
+    header.header-nav.menu_style_home_one.style2 ul.ace-responsive-menu li a{
+        font-size: 14px;
+    }
+    header .header_search_widget .mailchimp_form button{
+        margin-left: -60px;
+    }
+}
+.property_city_home6 .thumb img{
+    object-fit: cover;
+}
+.properti_city{
+    .detail-url{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+.ace-responsive-menu li.dropdown-notifications ul.sub-menu ul.sub-menu{
+    display: block;
+    .notification{
+        width: 100% !important;
+        padding: 0 10px !important;
+        a{
+            font-size: 14px !important;
+        }
+    }
+}
+
+.for_blog.list-type{
+    @media(min-width: 768px){
+        .thumb{
+            width: 46% !important;
+        }
+        .details{
+            width: 54% !important;
+        }
+    }
+    .thumb{
+        a{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        img{
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+}
